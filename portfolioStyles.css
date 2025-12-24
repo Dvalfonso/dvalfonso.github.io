@@ -71,6 +71,8 @@ body {
     padding: 25px;
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -81,6 +83,8 @@ body {
 .project-card h2 {
     font-size: 22px;
     margin-bottom: 12px;
+    align-self: center;
+    text-align: center;
 }
 
 .project-card p {

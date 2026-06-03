@@ -5,58 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Alfonso</title>
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    
-</body>
-    <header class="header">
-       
-        <a href="#" class="logo">David.</a> 
 
-        <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
-
-    </header>
+    <nav class="navbar"> <a href="#about">About</a> 
+        <a href="#stack">Stack</a> 
+        <a href="#projects">Projects</a> 
+        <a href="#contact">Contact</a> 
+    </nav>
 
     <section class="home">
         <div class="home-content">
-            <h1>Hi, i'm David Alfonso</h1>
-            <h3>Backend developer</h3>
+            <h1>David Alfonso</h1>
+            <h3>Backend Developer</h3>
             <p>
-                I am a backend developer focused on building scalable, secure, and maintainable systems. I enjoy designing clean architectures, working with APIs, and solving real-world problems through code.            
+                Computer Analyst graduate from UNRC focused on backend development.
+
+                I build backend systems with Java, Spring Boot and PostgreSQL,
+                with a strong interest in software architecture, distributed systems
+                and cybersecurity.
+
+                Currently building AppVet, a SaaS platform for veterinary clinics.              
             </p>
 
+            <div class="btn-box"> <a href="#projects">View Projects</a> 
+                <a href="https://github.com/Dvalfonso" target="_blank"> GitHub </a> 
+            </div>
+
             <div class="technologies">
-                <i class="devicon-java-plain-wordmark tech"></i>
-                <i class="devicon-spring-original-wordmark tech"></i>
-                <i class="devicon-mysql-plain-wordmark tech"></i>
-                <i class="devicon-python-plain-wordmark tech"></i>
-                <i class="devicon-flask-original-wordmark tech"></i>
-                <i class="devicon-ruby-plain-wordmark tech"></i>
-                <i class="devicon-dotnetcore-plain tech"></i>
+                <i class="devicon-java-plain-wordmark tech" title="Java"></i>
+                <i class="devicon-spring-original-wordmark tech" title="Spring"></i>
+                <i class="devicon-mysql-plain-wordmark tech" title="MySQL"></i>
+                <i class="devicon-python-plain-wordmark tech" title="Python"></i>
+                <i class="devicon-flask-original-wordmark tech" title="Flask"></i>
+                <i class="devicon-ruby-plain-wordmark tech" title="Ruby"></i>
+                <i class="devicon-dotnetcore-plain tech" title=".NET Core"></i>
             </div>
-
-            <div class="btn-box">
-                <a href="portfolio.html">view work</a>
-            </div>
-
         </div>
 
         <div class="home-img">
             <img src="fotoportfolio-modified.png" alt="David Alfonso">
         </div>
+    </section>
 
-        <div class="home-sci">
-            <a href="https://github.com/Dvalfonso"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/david-alfonso-080b56121/"><i class='bx bxl-linkedin' ></i></a>
-            <a href=""><i class='bx bxl-instagram'></i></a>
+    <section id="about" class="about">
+
+        <h2>About Me</h2> 
+        <p> I'm a Computer Analyst graduate from the National University of Río Cuarto. 
+            My main interests are backend development, software architecture, distributed systems and cybersecurity. 
+            I enjoy building practical software that solves real-world problems, from REST APIs to complete SaaS platforms. 
+        </p>
+
+    </section>
+
+
+    <section class="featured">
+        <span class="featured-tag">
+            Currently Building
+        </span>
+
+        <h2>🐾 AppVet</h2>
+
+        <p>
+            SaaS platform for veterinary clinics that centralizes
+            clients, pets, appointments and clinical records.
+        </p>
+
+        <div class="tech-stack">
+            <i class="devicon-java-plain-wordmark tech"></i>
+            <i class="devicon-spring-original-wordmark tech"></i>
+            <i class="devicon-postgresql-plain-wordmark tech"></i>
+            <i class="devicon-docker-plain tech"></i>
         </div>
     </section>
+    
+    <section id="stack" class="stack">
+
+        <h2>Tech Stack</h2>
+
+        <div class="stack-grid">
+
+            <div class="stack-card">
+                <h3>Backend</h3>
+                <p>Java, Spring Boot, REST APIs, Hibernate</p>
+            </div>
+
+            <div class="stack-card">
+                <h3>Database</h3>
+                <p>PostgreSQL, MySQL</p>
+            </div>
+
+            <div class="stack-card">
+                <h3>DevOps</h3>
+                <p>Docker, Git, Linux</p>
+            </div>
+
+            <div class="stack-card">
+                <h3>Learning</h3>
+                <p>Kafka, Cybersecurity, AWS</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2>Projects</h2> 
+        
+        <div class="projects-grid"> 
+            <div class="project-card">
+                <h2>Secure Bank API</h2>
+
+                <p>
+                    Banking REST API built with Spring Boot and Spring Security.
+                    Implements JWT authentication, role-based access control,
+                    password encryption with BCrypt and database migrations with Flyway.
+                </p>
+
+                <div class="tech-stack">
+                    <i class="devicon-java-plain-wordmark tech"></i>
+                    <i class="devicon-spring-original-wordmark tech"></i>
+                    <i class="devicon-postgresql-plain-wordmark tech"></i>
+                    <i class="devicon-gradle-original-wordmark tech"></i>
+                </div>
+
+                <a href="https://github.com/Dvalfonso/springboot-rbac"
+                target="_blank"
+                class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h2>Galaxy Classifier</h2>
+
+                <p>
+                    Convolutional Neural Network trained on the Galaxy Zoo 2 dataset
+                    to classify galaxies. Includes frontend, backend and prediction
+                    service for end-to-end image processing.
+                </p>
+
+                <div class="tech-stack">
+                    <i class="devicon-python-plain-wordmark tech"></i>
+                    <i class="devicon-flask-original-wordmark tech"></i>
+                    <i class="devicon-react-original-wordmark tech"></i>
+                    <i class="devicon-docker-plain tech"></i>
+                </div>
+
+                <a href="https://github.com/Proyecto-2025/Machine_Learning_Galaxyes_Classifier_Project"
+                target="_blank"
+                class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h2>Digital Wallet</h2>
+
+                <p>
+                    Backend-focused digital wallet built with Ruby and Sinatra.
+                    Supports authentication, session management, balance updates,
+                    money transfers and QR-based account top-ups.
+                </p>
+
+                <div class="tech-stack">
+                    <i class="devicon-ruby-plain tech"></i>
+                    <i class="devicon-sqlite-plain tech"></i>
+                    <i class="devicon-docker-plain tech"></i>
+                </div>
+
+                <a href="https://github.com/Leonidas314/Proyecto_Virtual_Wallet_AyDS"
+                target="_blank"
+                class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h2>Weather API</h2>
+                <p>
+                    Backend service that consumes a third-party weather API
+                    and exposes clean REST endpoints.
+                </p>
+                <div class="tech-stack">
+                    <i class="devicon-java-plain-wordmark tech"></i>
+                    <i class="devicon-spring-original-wordmark tech"></i>   
+                </div>
+
+                <a href="https://github.com/Dvalfonso/API-Weather" target="_blank" class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on Github
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h2>Authentication System</h2>
+                <p>
+                    JWT-based authentication system with role-based access control.
+                </p>
+
+                <div class="tech-stack">
+                    <i class="devicon-java-plain-wordmark tech"></i>
+                    <i class="devicon-spring-original-wordmark tech"></i>
+                </div>
+
+                <a href="https://github.com/Dvalfonso/SecureAuth" target="_blank" class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on Github
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h2>Starfighter game engine</h2>
+                <p>Turn-based space combat game developed in Java, featuring modular components, combat systems, and extensible game logic designed with clean architecture principles.                </p>
+
+                <div class="tech-stack">
+                    <i class="devicon-java-plain-wordmark tech"></i>
+                    <i class="devicon-gradle-original-wordmark tech"></i>
+                    <i class="devicon-junit-plain-wordmark tech"></i>
+
+                </div>
+
+                <a href="" target="_blank" class="project-btn">
+                    <i class="devicon-github-original"></i>
+                    View on Github
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2> 
+        
+        <div class="contact-links"> 
+            <a href="https://github.com/Dvalfonso" target="_blank"> GitHub </a> 
+            <a href="https://www.linkedin.com/in/david-alfonso-080b56121/" target="_blank"> LinkedIn </a> 
+            <a href="mailto:davidalfonsook@gmail.com"> Email </a> 
+        </div>
+    </section>
+</body>
 </html>
